@@ -1,7 +1,7 @@
 # Node js, Mongodb, Express js Shopping Cart 
 
 
-![image]( https://github.com/ankitsri98/E-Commerce-website..git)
+![image](file:///C:/Users/prince/Desktop/z.html)
 
 This project work with Stripe api for Nodejs. Go to http://stripe.com/ for more information
 
