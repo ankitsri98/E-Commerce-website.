@@ -37,12 +37,12 @@ This project work with Stripe api for Nodejs. Go to http://stripe.com/ for more 
 }
  ```
 
-##-------TECHNOLOGY USED-------
+## TECHNOLOGY USED-------
 
 * 1-FRONTEND-HTML 5 , CSS.
 * 2-BACKEND- NODE JS, EXPRESS JS , MONGO DB.
 
-##--------HOW TO RUN-------------
+## HOW TO RUN-------------
 
 * 0-FIRST INSTALL ALL THE SOFTWARE AFTER MOVING INSIDE THE PROJECT FOLDER LIKE "node js", "npm install" , "npm install ongo db" "npm install passport" "npm install stripe".
 * 1-RUN "mongod" ON COMMAND PROMT.
