@@ -1,0 +1,22 @@
+<!-- profile when the user has oredered some products else it remains empty -->
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>User Profile</h1>
+        <hr>
+        <h2>My Orders</h2>
+        {{#each orders}}
+        <div class="panel panel-default">
+                    <ul class="list-group">
+                {{#each this.items}}
+                    <li class="list-group-item">
+                      <span class="badge">{{ this.item.price }}</span>
+                       ({{ this.item.title }}) | {{ this.qty }}
+                       </li>
+                {{/each}}
+                </ul>
+                </div>
+                <div class="panel-footer">${{this.cart.totalPrice}}</div>
+            </div>
+        {{/each}}
+    </div>
+</div>

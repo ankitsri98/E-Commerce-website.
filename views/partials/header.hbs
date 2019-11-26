@@ -1,0 +1,37 @@
+<!-- contains files that are included in a variety of different files that is here it contains the NAVBAR which are included in different
+pages like in sign up / in and in home page -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="/"> General store 
+          <i class="fas fa-store"></i></a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <a class="btn btn-info" href="/shopping-cart" role="button">
+            <!-- before shopping icon added with<i> after href link -->
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping cart
+                <span class="badge badge-pill badge-secondary">{{session.cart.totalQty}}</span>
+            </a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i> User Management
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        {{# if login}}<!-- so this code is included for drop down menu when logged in then what is to shown and what is be shown when logged out -->
+                            <a class="dropdown-item" href="/user/profile">User Account</a>
+                            <a class="dropdown-item" href="/user/logout">Logout</a>
+                        {{ else }}
+                            <a class="dropdown-item" href="/user/signup">  
+                            <i class="fas fa-user-plus"></i>  Sign up </a>
+
+                            <a class="dropdown-item" href="/user/signin">
+                             <i class="fas fa-sign-in-alt"></i> Sign in </a>
+                        {{/if}}
+
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+</nav>

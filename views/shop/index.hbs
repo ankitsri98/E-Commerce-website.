@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div id="success" class="alert alert-success {{#if noMessage}}invisible{{/if}}">
+            {{ successMgs }}
+        </div>
+    </div>
+</div>
+<!-- deals with the front page products -->
+{{# each products }}
+    <div class="row">
+        {{# each this}}<!-- here this signifies for each element in the chunk of size 3 -->
+            <div class="col-sm-6 col-md-4 main"><!-- refer this class from here https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_grid_stacked_to_hor&stacked=h -->
+                <div class="card thumbnail" style="width: 20rem;">
+                    <img class="card-img-top shop-image  img-fluid" src="{{ this.imagePath }}" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">{{ this.title }}</h4>
+                        <p class="card-text description">
+                            {{ this.description }}
+                        </p>
+                        <div class="clearfix">
+                            <div class="price pull-left">Rs. {{ this.price }}</div>
+                            <a href="/add-to-cart/{{this._id}}" class="btn btn-raised btn-success pull-right"><!--when button clicked go to add to cart -->
+                                <i class="fa fa-plus" aria-hidden="true"></i> Add to shopping cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    {{/each}}
+    </div>
+{{/each}}
