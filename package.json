@@ -14,7 +14,7 @@
     "csurf": "^1.9.0",
     "debug": "~2.6.9",
     "express": "^4.17.1",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^5.3.1",
     "express-session": "^1.15.6",
     "express-validator": "^4.3.0",
     "hbs": "~4.0.1",
